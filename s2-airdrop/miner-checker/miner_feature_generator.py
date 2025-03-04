@@ -15,9 +15,9 @@ S3_FOLDER = 'season2-miners/'
 S3_ADDRESS_FILE = 's2-miner-addresses-2025-03-04T19-50-31-507Z.txt'  # Update with your actual filename
 STATS_API_ENDPOINT = 'https://11dugoz7j6.execute-api.us-east-1.amazonaws.com/prod/stats'
 OUTPUT_CSV = 'miner_feature_vectors.csv'
-MAX_WORKERS = 10  # Number of concurrent API requests
+MAX_WORKERS = 20  # Number of concurrent API requests
 REQUEST_DELAY = 0.2  # Delay between API requests to avoid rate limiting
-MAX_ADDRESSES = 100  # Set to a number for testing with fewer addresses
+MAX_ADDRESSES = 0  # Set to a number for testing with fewer addresses, if 0, then all addresses will be processed
 
 # Season 2 date range
 S2_START_SECONDS = 1721347200  # Fri Jul 19 2024 00:00:00 GMT+0000
