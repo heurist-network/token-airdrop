@@ -15,8 +15,7 @@ build/
 *.egg-info/
 
 # Generated data files
-*.csv
-miner_feature_vectors.csv
+
 
 # Logs
 *.log
