@@ -1,0 +1,19 @@
+{
+  "name": "rewards-contract-checker",
+  "version": "1.0.0",
+  "description": "Script to collect addresses from RewardsClaimed events on Base chain",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "ethers": "^6.10.0",
+    "csv-writer": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+} 
