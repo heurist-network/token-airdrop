@@ -36,3 +36,9 @@ Thumbs.db
 
 # AWS credentials
 .aws/ 
+
+
+# Ignore DS_Store files in parent directories
+*.DS_Store
+../../.DS_Store
+../.DS_Store

@@ -1,3 +1,9 @@
+## Cluster analysis on google colab 
+by uploading the miner_feature_vectors.csv file to the colab, we can perform cluster analysis on the miner features.
+
+link: https://colab.research.google.com/drive/1S9HOJxeIz6F-b1nTPX7DZzeljZIEZkle?usp=sharing
+
+## Get S2 miner addresses
 use `heurist-adhoc-data-query` lambda function to get the s-2 miner addresses and stored in the s3 bucket 
 
 ```
