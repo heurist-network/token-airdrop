@@ -1,0 +1,111 @@
+# Python virtual environments
+*/.venv/
+.venv/
+*/venv/
+venv/
+*/ENV/
+ENV/
+*/env/
+env/
+
+# Python bytecode
+__pycache__/
+*/__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+*/dist/
+build/
+*/build/
+*.egg-info/
+*/*.egg-info/
+
+# Generated data files
+*.csv
+!requirements.txt
+!important_data.csv
+*.pkl
+*.h5
+*.parquet
+*/data/processed/
+*/data/raw/
+*/data/interim/
+
+# Logs
+*.log
+*/logs/
+logs
+*.logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Environment variables
+.env
+.env.*
+*/.env
+*/.env.*
+
+# IDE specific files
+.idea/
+*/.idea/
+.vscode/
+*/.vscode/
+*.swp
+*.swo
+
+# OS specific files
+.DS_Store
+*/.DS_Store
+**/.DS_Store
+Thumbs.db
+*/Thumbs.db
+
+# AWS credentials
+.aws/
+*/.aws/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*/.ipynb_checkpoints
+
+# Node.js dependencies
+node_modules/
+*/node_modules/
+**/node_modules/
+jspm_packages/
+web_modules/
+
+# TypeScript specific
+*.tsbuildinfo
+*/dist/
+*/build/
+*/.next/
+*/.nuxt/
+*/.vuepress/dist
+*/.serverless/
+*/.fusebox/
+*/.dynamodb/
+*/.tern-port
+*/.cache/
+*/.output
+*/.jest/
+*/coverage/
+*/.nyc_output/
+
+# yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# Ignore DS_Store files in parent directories
+*.DS_Store
+../../.DS_Store
+../.DS_Store
