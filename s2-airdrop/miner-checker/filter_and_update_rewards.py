@@ -90,13 +90,21 @@ def process_miner_rewards(input_rewards_path, unique_addresses_path, miner_stats
                 total_llama_rewards += float(row['S2 llama_reward_tokens'])
                 total_base_tokens += float(row['S2 Total Base Tokens'])
     
-    # Step 4: Output the final results
+    # Step 4: Filter out addresses with less than 1 token reward
+    filtered_data = [row for row in processed_data if float(row['S2 Total Base Tokens']) >= 1]
+    
+    # Recalculate totals after filtering
+    total_waifu_rewards = sum(float(row['S2 waifu_reward_tokens']) for row in filtered_data)
+    total_llama_rewards = sum(float(row['S2 llama_reward_tokens']) for row in filtered_data)
+    total_base_tokens = sum(float(row['S2 Total Base Tokens']) for row in filtered_data)
+    
+    # Output the final results
     with open(output_path, 'w', newline='') as f:
-        if processed_data:
-            fieldnames = processed_data[0].keys()
+        if filtered_data:
+            fieldnames = filtered_data[0].keys()
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
-            writer.writerows(processed_data)
+            writer.writerows(filtered_data)
             
             # Add a blank row for better readability
             blank_row = {field: "" for field in fieldnames}
