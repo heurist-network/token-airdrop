@@ -131,7 +131,7 @@ if __name__ == "__main__":
     current_dir = os.path.dirname(os.path.abspath(__file__))
     base_dir = os.path.dirname(current_dir)
     
-    input_rewards_path = os.path.join(current_dir, "miner_rewards_20250305_210539.csv")
+    input_rewards_path = os.path.join(current_dir, "miner_rewards_20250306_164946.csv")
     unique_addresses_path = os.path.join(base_dir, "unique-addresses-collector", "unique_addresses.csv")
     miner_stats_path = os.path.join(current_dir, "top-miner-stats-0114-revise.json")
     
